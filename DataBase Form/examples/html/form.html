@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmer Survey</title>
+</head>
+<body>
+    <h1>Programming Preferences</h1>
+    <form action="get">
+        <p>Which is your favorite language?</p>
+            <label for="python"></label>
+            <input type="radio" name="language" id="python" value="python"> Python
+            <label for="javascript"></label>
+            <input type="radio" id="javascript" name="language" value="java"> Java
+            <label for="C/C++"></label>
+            <input type="radio" id="c/c++" name="language" value="c/c++"> C/C++
+            <label for="java"></label>
+            <input type="radio" id="java" name="language" value="java"> Java
+
+        <p>How good you are in this language?</p>
+            <select name="level">
+                <option value="advanced">5</option>
+                <option value="intermediate">3</option>
+                <option value="beginner">1</option>
+            </select>
+
+        <p>Write your experience, projects, or any previous work here</p>
+        <textarea name="experience" rows="3"></textarea>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+</body>
+</html>
