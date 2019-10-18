@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Programmer Survey</title>
     <link  rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="title" align="center">Programming Preferences</h1>
@@ -16,26 +18,27 @@
             <label class="label" for="password">password:</label>
             <input type="password" id="password" name="user_password" placeholder="enter your password">
             <br><br>
-            
-            <div class "wrap">
-                <p>Which is your favorite language?</p>
-                    <label for="python"></label>
-                    <input type="radio" name="language" id="python" value="python"> Python
-                    <label for="javascript"></label>
-                    <input type="radio" id="javascript" name="language" value="javascript"> Javascript
-                    <label for="C/C++"></label>
-                    <input type="radio" id="c/c++" name="language" value="c/c++"> C/C++
-                    <label for="java"></label>
-                    <input type="radio" id="java" name="language" value="java"> Java
 
-                <p>How good you are in this language?
+            <div class "wrap">
+                <p id="Q">Which is your favorite language?</p>
+                    <label for="python"></label>
+                    <div class="radio">
+                        <input type="radio" name="language" id="python" value="python"> Python
+                        <label id="points" for="javascript"></label>
+                        <input type="radio" id="javascript" name="language" value="javascript"> Javascript
+                        <label id="points" for="C/C++"></label>
+                        <input type="radio" id="c/c++" name="language" value="c/c++"> C/C++
+                        <label id="points" for="java"></label>
+                        <input type="radio" id="java" name="language" value="java"> Java
+                    </div>
+                <p id="Q">How good you are in this language?
                     <select id="select" name="level">
-                        <option value="5">Advanced</option>
-                        <option value="3">Intermediate</option>
-                        <option value="1">Beginner</option>
+                        <option id="options" value="5">Advanced</option>
+                        <option id="options" value="3">Intermediate</option>
+                        <option id="options" value="1">Beginner</option>
                     </select>
                 </p>
-                <p>Write your experience, projects, or any previous work here</p>
+                <p id="Q">Write your experience, projects, or any previous work here</p>
                 <textarea class="text" name="experience" rows="3"></textarea><br>
                 <input type="submit" id="submit" value="Submit">
             </div>
