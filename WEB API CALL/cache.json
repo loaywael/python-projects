@@ -1,0 +1,35 @@
+{
+    "IT": {
+        "get_movie_recom": {
+            "data": [
+                "Veronica",
+                "A Nightmare On Elm Street 3: Dream Warriors",
+                "A Nightmare On Elm Street 4: The Dream Master",
+                "A Nightmare On Elm Street 5: The Dream Child",
+                "Leprechaun"
+            ],
+            "url": "https://tastedive.com/api/similar?q=It&type=movie&limit=5&k=336737-movierec-MSYFZUOB"
+        },
+        "get_movie_info": {
+            "data": {
+                "Director": "Andy Muschietti",
+                "Actor": "Jaeden Martell, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard",
+                "Ratings": [
+                    {
+                        "Source": "Internet Movie Database",
+                        "Value": "7.4/10"
+                    },
+                    {
+                        "Source": "Rotten Tomatoes",
+                        "Value": "85%"
+                    },
+                    {
+                        "Source": "Metacritic",
+                        "Value": "69/100"
+                    }
+                ]
+            },
+            "url": "http://www.omdbapi.com/?r=json&t=It&apikey=578687a"
+        }
+    }
+}
