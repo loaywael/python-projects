@@ -3,16 +3,17 @@ import cv2
 import numpy as np
 from glob import glob
 
+
 def makeJPGS(path):
     """
-    Converts images og png to jpg foramt of all images located in path directory
+    Converts images from png to jpg foramt of all images located in path directory
 
     :param path: path of images to be converted to jpg format
     """
     outPath = path + "/jpgs"
     if not os.path.exists(outPath):
         os.mkdir(outPath)
-        imgs = glob("./data/*g")
+        imgs = glob("./data/*.g")
         for imgPath in imgs:
             img = cv2.imread(imgPath)
             os.remove(imgPath)
@@ -51,12 +52,24 @@ def getRegOfInterest(imgArr):
 
 
 def getPointsFromLine(imgShape, line):
-    m, b = line
-    y1 = imgShape[0]
-    y2 = int(y1 * (2/5))
-    x1 = int((y1 - b) / m)
-    x2 = int((y2 - b) / m)
-    return np.array([x1, y1, x2, y2])
+    """
+    Given a line parameters (slope, intercept), image shape
+    returns two points to plot the line
+
+    :param imgShape: tuple of the image dimensions
+    :param line numpy array of two values [slope, intercept]
+    :returns point: numpy array of the two points to plot the line
+    """
+    point = None
+    if len(line):
+        m, b = line
+        y1 = imgShape[0]
+        y2 = int(y1 * (3/7))
+        x1 = int((y1 - b) / m)
+        x2 = int((y2 - b) / m)
+        point = np.array([x1, y1, x2, y2])
+    return point
+
 
 def drawLanesLines(sceneImg, laneEdges, rho=2, theta=1,
     minLineLength=50, maxLineGap=5, threshold=100):
@@ -73,7 +86,7 @@ def drawLanesLines(sceneImg, laneEdges, rho=2, theta=1,
     :returns sceneLanes: numpy array image with overlayed lane lines
     """
     leftLines, rightLines = [], []
-
+    imgShape = sceneImg.shape
     lines = cv2.HoughLinesP(
         laneEdges, rho, theta*np.pi/180, threshold, lines = np.array([]),
         minLineLength=minLineLength, maxLineGap=maxLineGap
@@ -89,23 +102,31 @@ def drawLanesLines(sceneImg, laneEdges, rho=2, theta=1,
                 rightLines.append((slope, intercept))
         leftLine = np.average(leftLines, axis=0)
         rightLine = np.average(rightLines, axis=0)
-        x1, y1, x2, y2 = getPointsFromLine(sceneImg.shape, leftLine)
+        x1, y1, x2, y2 = getPointsFromLine(imgShape, leftLine)
         cv2.line(lineMask, (x1, y1), (x2, y2), (0, 255, 255), thickness=10)
-        x1, y1, x2, y2 = getPointsFromLine(sceneImg.shape, rightLine)
-        cv2.line(lineMask, (x1, y1), (x2, y2), (0, 255, 255), thickness=10)
+        point = getPointsFromLine(imgShape, rightLine)
+        if point is not None:
+            x1, y1, x2, y2 = point
+            cv2.line(lineMask, (x1, y1), (x2, y2), (0, 255, 255), thickness=10)
     sceneLanes = cv2.addWeighted(sceneImg, 0.8, lineMask, 1, 1)
     return sceneLanes
 
 
-imgsPath = sorted(makeJPGS("./data"))
-laneImg = cv2.imread(imgsPath[0])
-sceneEdges = getSceneCanny(laneImg)
-laneEdges = getRegOfInterest(sceneEdges)
-sceneLanes = drawLanesLines(laneImg, laneEdges, minLineLength=50, maxLineGap=5)
-cv2.imwrite("data/outImgs/sceneEdges.jpg", sceneEdges)
-cv2.imwrite("data/outImgs/laneEdges.jpg", laneEdges)
-cv2.imwrite("data/outImgs/detectedLane.jpg", sceneLanes)
+# imgsPath = sorted(makeJPGS("./data"))
+cap = cv2.VideoCapture("data/test2.mp4")
+outVid = cv2.VideoWriter("data/outImgs/lanePath.mp4", -1,10, (640, 480))
 
-cv2.imshow("window", sceneLanes)
-cv2.waitKey(0)
+while cap.isOpened():
+    _, laneImg = cap.read()
+    sceneEdges = getSceneCanny(laneImg)
+    laneEdges = getRegOfInterest(sceneEdges)
+    sceneLanes = drawLanesLines(laneImg, laneEdges, minLineLength=50, maxLineGap=5)
+# cv2.imwrite("data/outImgs/sceneEdges.jpg", sceneEdges)
+# cv2.imwrite("data/outImgs/laneEdges.jpg", laneEdges)
+# cv2.imwrite("data/outImgs/detectedLane.jpg", sceneLanes)
+    outVid.write(sceneLanes)
+    cv2.imshow("window", sceneLanes)
+    if cv2.waitKey(1) == ord('q'):
+        break
+cap.release()
 cv2.destroyAllWindows()
