@@ -1,10 +1,12 @@
 #
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.uic import loadUiType
-from os import path, listdir
+from os import path, listdir, makedirs
+from reg import Ui_MainWindow
 
 
-MainUI, _ = loadUiType("regForm/regForm.ui")
+MainUI = Ui_MainWindow
+# MainUI, _ = loadUiType("./regForm.ui")
 
 
 class RegForm(QtWidgets.QMainWindow, MainUI):
@@ -16,8 +18,9 @@ class RegForm(QtWidgets.QMainWindow, MainUI):
         self.submit.clicked.connect(self.saveData)
 
     def initDB(self):
-        self.dbPath = "regForm/regFormDB.csv"
+        self.dbPath = "data/regFormDB.csv"
         if not path.exists(self.dbPath):
+            makedirs("data")
             with open(self.dbPath, "w") as db:
                 db.write("User Name, User E-Mail, User Password\n")
 
