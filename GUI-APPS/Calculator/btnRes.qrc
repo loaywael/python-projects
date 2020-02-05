@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icons/recZBtn.png</file>
+    <file>icons/nBbtn.png</file>
+    <file>icons/Obtn.png</file>
+    <file>icons/tBtn.png</file>
+    <file>icons/recBTN.png</file>
+  </qresource>
+</RCC>
