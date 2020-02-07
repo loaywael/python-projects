@@ -40,9 +40,17 @@ class Calculator(QtWidgets.QMainWindow, MainUI):
     def _delete(self):
         self.eqLbl.setText(self.eqLbl.text()[:-1])
 
+    def _cleanZeros(self, equation):
+        if not equation.startswith('0'):
+            return equation
+        else:
+            equation = equation[1:]
+            return self._cleanZeros(equation)
+
     def _calcResult(self):
         text = self.eqLbl.text()
         if text:
-            result = str(eval(text))
+            equation = self._cleanZeros(text)
+            result = str(eval(equation))
             self.resLbl.setText(result)
             self.eqLbl.setText("0")

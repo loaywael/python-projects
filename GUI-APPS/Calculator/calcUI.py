@@ -2,11 +2,13 @@
 
 # Form implementation generated from reading ui file 'calculator.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.14.1
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -59,13 +61,20 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addItem(spacerItem2)
         self.leftParenthBtn = QtWidgets.QPushButton(self.frame)
         self.leftParenthBtn.setMinimumSize(QtCore.QSize(200, 50))
-        self.leftParenthBtn.setStyleSheet("image: url(:/newPrefix/icons/recBTN.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
-"font: 24pt \"Segoe UI\";\n"
-"color:rgb(254, 176, 41);\n"
-"\n"
-"\n"
+        self.leftParenthBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/recBTN.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/oParenSelectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.leftParenthBtn.setObjectName("leftParenthBtn")
         self.horizontalLayout.addWidget(self.leftParenthBtn)
@@ -76,11 +85,20 @@ class Ui_MainWindow(object):
         self.rightParenthBtn.setSizeIncrement(QtCore.QSize(0, 0))
         self.rightParenthBtn.setBaseSize(QtCore.QSize(0, 0))
         self.rightParenthBtn.setAutoFillBackground(False)
-        self.rightParenthBtn.setStyleSheet("image: url(:/newPrefix/icons/recBTN.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
-"font: 24pt \"Segoe UI\";\n"
-"color:rgb(254, 176, 41);\n"
+        self.rightParenthBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/recBTN.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/oParenSelectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.rightParenthBtn.setIconSize(QtCore.QSize(20, 20))
         self.rightParenthBtn.setFlat(False)
@@ -116,25 +134,58 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.sevenBtn = QtWidgets.QPushButton(self.frame_2)
         self.sevenBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.sevenBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.sevenBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.sevenBtn.setObjectName("sevenBtn")
         self.horizontalLayout_2.addWidget(self.sevenBtn)
         self.eightBtn = QtWidgets.QPushButton(self.frame_2)
         self.eightBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.eightBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.eightBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.eightBtn.setObjectName("eightBtn")
         self.horizontalLayout_2.addWidget(self.eightBtn)
         self.nineBtn = QtWidgets.QPushButton(self.frame_2)
         self.nineBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.nineBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.nineBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.nineBtn.setObjectName("nineBtn")
         self.horizontalLayout_2.addWidget(self.nineBtn)
@@ -147,25 +198,58 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.fourBtn = QtWidgets.QPushButton(self.frame_3)
         self.fourBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.fourBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.fourBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.fourBtn.setObjectName("fourBtn")
         self.horizontalLayout_3.addWidget(self.fourBtn)
         self.fiveBtn = QtWidgets.QPushButton(self.frame_3)
         self.fiveBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.fiveBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.fiveBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.fiveBtn.setObjectName("fiveBtn")
         self.horizontalLayout_3.addWidget(self.fiveBtn)
         self.sixBtn = QtWidgets.QPushButton(self.frame_3)
         self.sixBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.sixBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.sixBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.sixBtn.setObjectName("sixBtn")
         self.horizontalLayout_3.addWidget(self.sixBtn)
@@ -178,25 +262,58 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.oneBtn = QtWidgets.QPushButton(self.frame_4)
         self.oneBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.oneBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.oneBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.oneBtn.setObjectName("oneBtn")
         self.horizontalLayout_4.addWidget(self.oneBtn)
         self.twoBtn = QtWidgets.QPushButton(self.frame_4)
         self.twoBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.twoBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.twoBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.twoBtn.setObjectName("twoBtn")
         self.horizontalLayout_4.addWidget(self.twoBtn)
         self.threeBtn = QtWidgets.QPushButton(self.frame_4)
         self.threeBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.threeBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.threeBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.threeBtn.setObjectName("threeBtn")
         self.horizontalLayout_4.addWidget(self.threeBtn)
@@ -209,22 +326,46 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.zeroBtn = QtWidgets.QPushButton(self.frame_5)
         self.zeroBtn.setMinimumSize(QtCore.QSize(150, 50))
-        self.zeroBtn.setStyleSheet("image: url(:/newPrefix/icons/recZBtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.zeroBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/recZBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/oZerSelecBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.zeroBtn.setObjectName("zeroBtn")
         self.horizontalLayout_5.addWidget(self.zeroBtn)
         self.dotBtn = QtWidgets.QPushButton(self.frame_5)
         self.dotBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.dotBtn.setStyleSheet("image: url(:/newPrefix/icons/nBbtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.dotBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/nBbtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.dotBtn.setObjectName("dotBtn")
         self.horizontalLayout_5.addWidget(self.dotBtn)
         self.verticalLayout.addWidget(self.frame_5)
         self.horizontalLayout_10.addWidget(self.frame_10)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_10.addItem(spacerItem6)
         self.frame_11 = QtWidgets.QFrame(self.frame_12)
         self.frame_11.setStyleSheet("font: 30pt \"Segoe UI\";\n"
 "")
@@ -241,21 +382,41 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.mulBtn = QtWidgets.QPushButton(self.frame_6)
         self.mulBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.mulBtn.setStyleSheet("font: 30pt \"Segoe UI\";\n"
-"image:url(:/newPrefix/icons/tBtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.mulBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/tBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.mulBtn.setObjectName("mulBtn")
         self.horizontalLayout_6.addWidget(self.mulBtn, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_6.addItem(spacerItem6)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_6.addItem(spacerItem7)
         self.divBtn = QtWidgets.QPushButton(self.frame_6)
         self.divBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.divBtn.setStyleSheet("image:url(:/newPrefix/icons/tBtn.png);\n"
-"font: 30pt \"Segoe UI\";\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.divBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/tBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.divBtn.setObjectName("divBtn")
         self.horizontalLayout_6.addWidget(self.divBtn, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
@@ -268,22 +429,41 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.addBtn = QtWidgets.QPushButton(self.frame_7)
         self.addBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.addBtn.setStyleSheet("image:url(:/newPrefix/icons/tBtn.png);\n"
-"font: 30pt \"Segoe UI\";\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.addBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/tBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.addBtn.setObjectName("addBtn")
         self.horizontalLayout_7.addWidget(self.addBtn, 0, QtCore.Qt.AlignHCenter)
-        spacerItem7 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_7.addItem(spacerItem7)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_7.addItem(spacerItem8)
         self.subBtn = QtWidgets.QPushButton(self.frame_7)
         self.subBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.subBtn.setStyleSheet("image:url(:/newPrefix/icons/tBtn.png);\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
-"font: 30pt \"Segoe UI\";\n"
-"\n"
+        self.subBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/tBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.subBtn.setObjectName("subBtn")
         self.horizontalLayout_7.addWidget(self.subBtn)
@@ -296,21 +476,41 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         self.remBtn = QtWidgets.QPushButton(self.frame_8)
         self.remBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.remBtn.setStyleSheet("image:url(:/newPrefix/icons/tBtn.png);\n"
-"font: 30pt \"Segoe UI\";\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.remBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/tBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.remBtn.setObjectName("remBtn")
         self.horizontalLayout_8.addWidget(self.remBtn)
-        spacerItem8 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_8.addItem(spacerItem8)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_8.addItem(spacerItem9)
         self.delBtn = QtWidgets.QPushButton(self.frame_8)
         self.delBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.delBtn.setStyleSheet("image:url(:/newPrefix/icons/Obtn.png);\n"
-"background-color: transparent;\n"
-"font: 20pt \"Segoe UI\";\n"
-"border-style: solid;\n"
+        self.delBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/Obtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.delBtn.setObjectName("delBtn")
         self.horizontalLayout_8.addWidget(self.delBtn)
@@ -323,29 +523,49 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
         self.resultBtn = QtWidgets.QPushButton(self.frame_9)
         self.resultBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.resultBtn.setStyleSheet("image:url(:/newPrefix/icons/Obtn.png);\n"
-"font: 30pt \"Segoe UI\";\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.resultBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/Obtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 30pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.resultBtn.setObjectName("resultBtn")
         self.horizontalLayout_9.addWidget(self.resultBtn)
-        spacerItem9 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_9.addItem(spacerItem9)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_9.addItem(spacerItem10)
         self.clrBtn = QtWidgets.QPushButton(self.frame_9)
         self.clrBtn.setMinimumSize(QtCore.QSize(60, 60))
-        self.clrBtn.setStyleSheet("image:url(:/newPrefix/icons/Obtn.png);\n"
-"font: 20pt \"Segoe UI\";\n"
-"background-color: transparent;\n"
-"border-style: solid;\n"
+        self.clrBtn.setStyleSheet("QPushButton{\n"
+"    image: url(:/newPrefix/icons/Obtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(255, 255, 255);\n"
+"    border-style: solid;\n"
+" }\n"
+" QPushButton:pressed {\n"
+"    image: url(:/newPrefix/icons/OselectBtn.png);\n"
+"    background-color: transparent;\n"
+"    font: 24pt \"Segoe UI\";\n"
+"    color:rgb(254, 176, 41);\n"
+"    border-style: solid;\n"
+" }\n"
 "")
         self.clrBtn.setObjectName("clrBtn")
         self.horizontalLayout_9.addWidget(self.clrBtn)
         self.verticalLayout_2.addWidget(self.frame_9)
         self.horizontalLayout_10.addWidget(self.frame_11)
         self.verticalLayout_3.addWidget(self.frame_12)
-        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_3.addItem(spacerItem10)
+        spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem11)
         self.verticalLayout_4.addWidget(self.frame_13)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -381,8 +601,8 @@ class Ui_MainWindow(object):
         self.delBtn.setText(_translate("MainWindow", "X"))
         self.resultBtn.setText(_translate("MainWindow", "="))
         self.clrBtn.setText(_translate("MainWindow", "AC"))
-
 import btnRes_rc
+
 
 if __name__ == "__main__":
     import sys
@@ -392,4 +612,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

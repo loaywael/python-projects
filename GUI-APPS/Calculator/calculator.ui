@@ -155,13 +155,20 @@ color: rgb(255, 255, 255);</string>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">image: url(:/newPrefix/icons/recBTN.png);
-background-color: transparent;
-border-style: solid;
-font: 24pt &quot;Segoe UI&quot;;
-color:rgb(254, 176, 41);
-
-
+             <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/recBTN.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/oParenSelectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
             </property>
             <property name="text">
@@ -206,11 +213,20 @@ color:rgb(254, 176, 41);
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">image: url(:/newPrefix/icons/recBTN.png);
-background-color: transparent;
-border-style: solid;
-font: 24pt &quot;Segoe UI&quot;;
-color:rgb(254, 176, 41);
+             <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/recBTN.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/oParenSelectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
             </property>
             <property name="text">
@@ -309,9 +325,20 @@ color: rgb(254, 176, 41)</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -328,9 +355,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -347,9 +385,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -378,9 +427,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -397,9 +457,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -416,9 +487,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -447,9 +529,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -466,9 +559,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -485,9 +589,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -516,9 +631,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/recZBtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/recZBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/oZerSelecBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -535,9 +661,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/newPrefix/icons/nBbtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/nBbtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -550,6 +687,19 @@ border-style: solid;
              </item>
             </layout>
            </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item>
            <widget class="QFrame" name="frame_11">
@@ -582,10 +732,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 30pt &quot;Segoe UI&quot;;
-image:url(:/newPrefix/icons/tBtn.png);
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/tBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -618,10 +778,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/tBtn.png);
-font: 30pt &quot;Segoe UI&quot;;
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/tBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -650,10 +820,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/tBtn.png);
-font: 30pt &quot;Segoe UI&quot;;
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/tBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -686,11 +866,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/tBtn.png);
-background-color: transparent;
-border-style: solid;
-font: 30pt &quot;Segoe UI&quot;;
-
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/tBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -719,10 +908,20 @@ font: 30pt &quot;Segoe UI&quot;;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/tBtn.png);
-font: 30pt &quot;Segoe UI&quot;;
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/tBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -755,10 +954,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/Obtn.png);
-background-color: transparent;
-font: 20pt &quot;Segoe UI&quot;;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/Obtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -787,10 +996,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/Obtn.png);
-font: 30pt &quot;Segoe UI&quot;;
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/Obtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 30pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
@@ -823,10 +1042,20 @@ border-style: solid;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image:url(:/newPrefix/icons/Obtn.png);
-font: 20pt &quot;Segoe UI&quot;;
-background-color: transparent;
-border-style: solid;
+                   <string notr="true">QPushButton{
+	image: url(:/newPrefix/icons/Obtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(255, 255, 255);
+	border-style: solid;
+ }
+ QPushButton:pressed {
+    image: url(:/newPrefix/icons/OselectBtn.png);
+	background-color: transparent;
+	font: 24pt &quot;Segoe UI&quot;;
+	color:rgb(254, 176, 41);
+	border-style: solid;
+ }
 </string>
                   </property>
                   <property name="text">
